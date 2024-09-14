@@ -11,7 +11,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:Label("Questions")
+
 Tab:AddParagraph("When was Slap Battles first published?","16/2/2021")
 Tab:AddParagraph("What glove costs 9750 slaps?","Coil")
 Tab:AddParagraph("What is the chance of getting bob from Replica?","1/7500")
@@ -30,7 +30,7 @@ Tab:AddParagraph("How many players currently exist in this realm as of when I st
 Tab:AddParagraph("What has 4 fingers and one thumb but is not alive?","Glove (You must type in the chat)")
 Tab:AddParagraph("What glove can't you hit when it isn't there?","Elude")
 Tab:AddParagraph("We will play Simon Says at the end, do you understand?","Yes")
-Tab:Label("Simon Says")
+
 Tab:AddParagraph("Simon says if you seek for the reward, dance on top of the entities head.","Dance on top of the clone's head (by typing --/e dance--) if it says --Simon says--. Walk through the portal if it doesn't say --Simon says--")
 Tab:AddParagraph("Simon says walk through the portal to claim your reward","Self-explanatory. Walk through the portal if it says --Simon says--. Jump off the map if it doesn't say --Simon says--")
 Tab:AddParagraph("Simon says jump off the map to claim your reward","Self-explanatory. Jump off the map if it says --Simon says--. Walk through the portal if it doesn't say --Simon says--")
