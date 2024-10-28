@@ -15,7 +15,7 @@ local Tab = Window:MakeTab({
 Tab:AddParagraph("When was Slap Battles first published?","16/2/2021")
 Tab:AddParagraph("What glove costs 9750 slaps?","Coil")
 Tab:AddParagraph("What is the chance of getting bob from Replica?","1/7500")
-Tab:AddParagraph("How many gloves stands are in Slap Battles right now?","191 (last updated in boxer glove update)")
+Tab:AddParagraph("How many gloves stands are in Slap Battles right now?","197 (last updated in lawnmower glove update)")
 Tab:AddParagraph("What is the badge name for the Glitch glove?","01010010 01010101 01001110")
 Tab:AddParagraph("If 1=3 2=3 3=5 4=4 5=4 6=?","3")
 Tab:AddParagraph("Whom ultimately controls this realm?","Tencell")
