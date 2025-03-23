@@ -22,10 +22,12 @@ local SimonSay = Window:MakeTab({
 	PremiumOnly = false
 })
 
+QuestionNumber = 0
 for i,v in pairs(workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog:FindFirstChild("DialogChoice") and workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog.DialogChoice:FindFirstChild("DialogChoice"):GetDescendants()) do
 if v then
 if v:FindFirstChild("RightChoice") then
-Question:AddParagraph("Question "..i..": "..v.Parent.ResponseDialog,"Answer: "..v.Parent.UserDialog)
+QuestionNumber = QuestionNumber + 1
+Question:AddParagraph("Question "..QuestionNumber..": "..v.Parent.ResponseDialog,"Answer: "..v.Parent.UserDialog)
 end
 end
 end
