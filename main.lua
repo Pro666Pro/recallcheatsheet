@@ -25,7 +25,7 @@ local SimonSay = Window:MakeTab({
 for i,v in pairs(workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog:FindFirstChild("DialogChoice") and workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog.DialogChoice:FindFirstChild("DialogChoice"):GetDescendants()) do
 if v then
 if v:FindFirstChild("RightChoice") then
-SimonSay:AddParagraph("Question: "..v.Parent.ResponseDialog,"Answer: "..v.Parent.UserDialog)
+Question:AddParagraph("Question: "..v.Parent.ResponseDialog,"Answer: "..v.Parent.UserDialog)
 end
 end
 end
