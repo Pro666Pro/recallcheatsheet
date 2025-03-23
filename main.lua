@@ -28,12 +28,25 @@ local Other = Window:MakeTab({
 	PremiumOnly = false
 })
 
+function CheckDialog(check)
+for i,v in pairs(check:GetChildren()) do
+if v:IsA("DialogChoice") and v:FindFirstChild("RightChoice") then
+return v.UserDialog
+end
+end
+end
+
 QuestionNumber = 0
 for i,v in pairs(workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog:FindFirstChild("DialogChoice") and workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog:GetDescendants()) do
 if v then
 if v:FindFirstChild("RightChoice") then
 QuestionNumber = QuestionNumber + 1
-Question:AddParagraph("Question "..QuestionNumber..": "..v.ResponseDialog,"Answer: "..v.UserDialog)
+if QuestionNumber ~= 10 then
+local a = CheckDialog(v)
+Question:AddParagraph("Question "..QuestionNumber..": "..v.RightChoice.Parent.ResponseDialog,"Answer: "..a)
+else
+Question:AddParagraph("Last Question: "..v.RightChoice.Parent.ResponseDialog,"See answer in simon says tab!")
+end
 end
 end
 end
