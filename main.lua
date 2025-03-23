@@ -25,7 +25,7 @@ local SimonSay = Window:MakeTab({
 for i,v in pairs(workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog:FindFirstChild("DialogChoice") and workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog.DialogChoice:FindFirstChild("DialogChoice"):GetDescendants()) do
 if v then
 if v:FindFirstChild("RightChoice") then
-Question:AddParagraph("Question: "..v.Parent.ResponseDialog,"Answer: "..v.Parent.UserDialog)
+Question:AddParagraph("Question "..i..": "..v.Parent.ResponseDialog,"Answer: "..v.Parent.UserDialog)
 end
 end
 end
@@ -34,6 +34,6 @@ SimonSay:AddParagraph("Question: Simon says if you seek for the reward, dance on
 SimonSay:AddParagraph("Question: Simon says walk through the portal to claim your reward","Answer: Self-explanatory. Walk through the portal if it says ''Simon says''. Jump off the map if it doesn't say ''Simon says''")
 SimonSay:AddParagraph("Question: Simon says jump off the map to claim your reward","Answer: Self-explanatory. Jump off the map if it says ''Simon says''. Walk through the portal if it doesn't say ''Simon says''")
 SimonSay:AddParagraph("Question: Simon says if the reward is what you seek, You must dance on top of the Right/Left staircase Crystal.","Answer: Dance on top of the Crystals according to the NPC's Perspective by using the command ''/e dance'' in chat. If it says, ''Left Crystal'', You go and Dance on the Right Crystal (Its Left will be your Right and its Right will be your Left). Walk through the portal if it doesn't say ''Simon says''")
-SimonSay:AddParagraph("Question: Simon says riddle me this and speak it out. What has four fingers and a thumb but isn’t alive?","Answer: Type ''a glove'' in chat.")
+SimonSay:AddParagraph("Question: Simon says riddle me this and speak it out. What has four fingers and a thumb but isn't alive?","Answer: Type ''a glove'' in chat.")
 SimonSay:AddParagraph("Simon says riddle me this and speak it out. What has a bottom at the top?","Type ''a leg'' in chat.")
 end
