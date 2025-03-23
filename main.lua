@@ -51,6 +51,7 @@ end
 end
 end
 
+-- Sowwy lol i didn't made it automatic
 SimonSay:AddParagraph("Question: Simon says if you seek for the reward, dance on top of the entities head.","Answer: Dance on top of the clone's head (by typing ''/e dance'') if it says ''Simon says''. Walk through the portal if it doesn't say ''Simon says''")
 SimonSay:AddParagraph("Question: Simon says walk through the portal to claim your reward","Answer: Self-explanatory. Walk through the portal if it says ''Simon says''. Jump off the map if it doesn't say ''Simon says''")
 SimonSay:AddParagraph("Question: Simon says jump off the map to claim your reward","Answer: Self-explanatory. Jump off the map if it says ''Simon says''. Walk through the portal if it doesn't say ''Simon says''")
