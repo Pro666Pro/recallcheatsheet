@@ -12,28 +12,28 @@ local Window = OrionLib:MakeWindow({IntroText = "Recall Cheat Sheet", IntroIcon 
 
 local Question = Window:MakeTab({
 	Name = "Questions",
-	Icon = "rbxthumb://type=Asset&id=71615493070800&w=150&h=150",
+	Icon = "rbxassetid://15315284749",
 	PremiumOnly = false
 })
 
 local SimonSay = Window:MakeTab({
 	Name = "Simon Says",
-	Icon = "rbxthumb://type=Asset&id=71615493070800&w=150&h=150",
+	Icon = "rbxassetid://15315284749",
 	PremiumOnly = false
 })
 
 local Other = Window:MakeTab({
 	Name = "Other",
-	Icon = "rbxthumb://type=Asset&id=71615493070800&w=150&h=150",
+	Icon = "rbxassetid://15315284749",
 	PremiumOnly = false
 })
 
 QuestionNumber = 0
-for i,v in pairs(workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog:FindFirstChild("DialogChoice") and workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog.DialogChoice:FindFirstChild("DialogChoice"):GetDescendants()) do
+for i,v in pairs(workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog:FindFirstChild("DialogChoice") and workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog:GetDescendants()) do
 if v then
 if v:FindFirstChild("RightChoice") then
 QuestionNumber = QuestionNumber + 1
-Question:AddParagraph("Question "..QuestionNumber..": "..v.Parent.ResponseDialog,"Answer: "..v.Parent.UserDialog)
+Question:AddParagraph("Question "..QuestionNumber..": "..v.ResponseDialog,"Answer: "..v.UserDialog)
 end
 end
 end
