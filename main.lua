@@ -1,9 +1,12 @@
 if workspace:FindFirstChild("RepressedMemories") and workspace.RepressedMemories:FindFirstChild("RepressedMemoriesNPC") and workspace.RepressedMemories.RepressedMemoriesNPC:FindFirstChild("Head") and workspace.RepressedMemories.RepressedMemoriesNPC.Head:FindFirstChild("Dialog") and workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog:FindFirstChild("DialogChoice") and workspace.RepressedMemories.RepressedMemoriesNPC.Head.Dialog.DialogChoice:FindFirstChild("DialogChoice") then
-local function somethingimportant()
-getgenv().gethui = function() return game.CoreGui end
-task.wait(1)
-end
-somethingimportant()
+pcall(function()
+    local srvc = game:GetService("CoreGui"):FindFirstChild("RobloxGui") or game:GetService("CoreGui")
+    if getgenv then
+        getgenv().gethui = function() return srvc end
+    end
+    _G.gethui = function() return srvc end
+    gethui = function() return srvc end
+end)
 
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Pro666Pro/DraggableOrionLib/main/main.lua")))()
 
